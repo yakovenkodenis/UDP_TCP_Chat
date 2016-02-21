@@ -6,6 +6,7 @@ import java.net.NetworkInterface;
 import java.net.UnknownHostException;
 import java.util.Enumeration;
 
+
 public class InetUtils {
 
     public static InetAddress getLocalHostLANAddress() throws UnknownHostException {

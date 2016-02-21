@@ -20,33 +20,37 @@ public class UDPClient {
         this.port = port;
     }
 
-    public void echoServer() throws IOException {
-        DatagramChannel channel = DatagramChannel.open();
+    public void echoServer() {
+        try {
+            DatagramChannel channel = DatagramChannel.open();
 
-        SocketAddress address = new InetSocketAddress(0);
-        socket = channel.socket();
-        socket.setSoTimeout(5000);
-        socket.bind(address);
+            SocketAddress address = new InetSocketAddress(0);
+            socket = channel.socket();
+            socket.setSoTimeout(5000);
+            socket.bind(address);
 
-        SocketAddress server = new InetSocketAddress(host, port);
-        ByteBuffer buffer = ByteBuffer.allocate(8192);
-        buffer.order(ByteOrder.BIG_ENDIAN);
-        buffer.put((byte) 65);
-        buffer.flip();
+            SocketAddress server = new InetSocketAddress(host, port);
+            ByteBuffer buffer = ByteBuffer.allocate(8192);
+            buffer.order(ByteOrder.BIG_ENDIAN);
+            buffer.put((byte) 65);
+            buffer.flip();
 
-        channel.send(buffer, server);
+            channel.send(buffer, server);
 
-        buffer.clear();
-        buffer.put((byte) 0).put((byte) 0).put((byte) 0).put((byte) 0);
+            buffer.clear();
+            buffer.put((byte) 0).put((byte) 0).put((byte) 0).put((byte) 0);
 
-        channel.receive(buffer);
-        buffer.flip();
+            channel.receive(buffer);
+            buffer.flip();
 
-        long secondsSince1970 = buffer.getLong();
+            long secondsSince1970 = buffer.getLong();
 
-        System.out.println("CLIENT: " + secondsSince1970);
+            System.out.println("CLIENT: " + secondsSince1970);
 
-        channel.close();
+            channel.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public String send(String message) {
@@ -67,10 +71,6 @@ public class UDPClient {
             socket.receive(reply);
 
             response = new String(reply.getData()).trim();
-        } catch (SocketException e) {
-            e.printStackTrace();
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -89,10 +89,6 @@ public class UDPClient {
 
             DatagramPacket request = new DatagramPacket(m, message.length(), aHost, port);
             socket.send(request);
-        } catch (SocketException e) {
-            e.printStackTrace();
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
