@@ -10,6 +10,7 @@
       <root url="jar://$PROJECT_DIR$/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/hibernate-commons-annotations-4.0.2.Final.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/hibernate-core-4.2.2.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/postgresql-9.4.1208.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

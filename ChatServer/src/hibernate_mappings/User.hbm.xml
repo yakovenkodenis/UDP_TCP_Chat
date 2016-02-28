@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="persistence.User" table="ChatUser">
+        <meta attribute="class-description">
+            This class contains User details.
+        </meta>
+
+        <id name="id" type="int" column="id">
+            <generator class="native"/>
+        </id>
+
+        <property name="firstName" column="first_name" type="string"/>
+        <property name="lastName" column="last_name" type="string"/>
+        <property name="email" column="email" type="string"/>
+        <property name="password" column="password" type="string"/>
+        <property name="createdAt" column="created_at" type="date"/>
+        <property name="updatedAt" column="updated_at" type="date"/>
+        <property name="educationLevel" column="education_level" type="string"/>
+        <property name="admin" column="is_admin" type="boolean"/>
+    </class>
+</hibernate-mapping>
