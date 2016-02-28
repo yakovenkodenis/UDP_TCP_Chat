@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af3cfec4-835e-40fc-a6f1-7a2c0a2ae80d" name="Default" comment="Modify workspace&#10;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../README.md" afterPath="$PROJECT_DIR$/../README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ChatServer.iws" />
@@ -67,8 +69,8 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../ChatClient/src/controllers/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26493508" vertical-offset="0" max-vertical-offset="493">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.83896106" vertical-offset="0" max-vertical-offset="493">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -634,7 +636,7 @@
       <workItem from="1456054786984" duration="1510000" />
       <workItem from="1456058406360" duration="416000" />
       <workItem from="1456059287970" duration="714000" />
-      <workItem from="1456654903274" duration="4084000" />
+      <workItem from="1456654903274" duration="4836000" />
     </task>
     <task id="LOCAL-00001" summary="Modify workspace&#10;">
       <created>1456658898509</created>
@@ -646,7 +648,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18926000" />
+    <option name="totallyTimeSpent" value="19678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1148,8 +1150,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../ChatClient/src/controllers/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26493508" vertical-offset="0" max-vertical-offset="493">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.83896106" vertical-offset="0" max-vertical-offset="493">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding />
         </state>
       </provider>
