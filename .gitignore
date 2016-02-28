@@ -15,19 +15,34 @@ hs_err_pid*
 /ChatServer/out/
 
 # User-specific stuff:
-.idea/workspace.xml
-.idea/tasks.xml
-.idea/dictionaries
-.idea/vcs.xml
-.idea/jsLibraryMappings.xml
+/ChatClient/.idea/workspace.xml
+/ChatClient/.idea/tasks.xml
+/ChatClient/.idea/dictionaries
+/ChatClient/.idea/vcs.xml
+/ChatClient/.idea/jsLibraryMappings.xml
+
+/ChatServer/.idea/workspace.xml
+/ChatServer/.idea/tasks.xml
+/ChatServer/.idea/dictionaries
+/ChatServer/.idea/vcs.xml
+/ChatServer/.idea/jsLibraryMappings.xml
 
 # Sensitive or high-churn files:
-.idea/dataSources.ids
-.idea/dataSources.xml
-.idea/sqlDataSources.xml
-.idea/dynamic.xml
-.idea/uiDesigner.xml
+/ChatClient/.idea/dataSources.ids
+/ChatClient/.idea/dataSources.xml
+/ChatClient/.idea/sqlDataSources.xml
+/ChatClient/.idea/dynamic.xml
+/ChatClient/.idea/uiDesigner.xml
+
+/ChatServer/.idea/dataSources.ids
+/ChatServer/.idea/dataSources.xml
+/ChatServer/.idea/sqlDataSources.xml
+/ChatServer/.idea/dynamic.xml
+/ChatServer/.idea/uiDesigner.xml
 
 # Gradle:
-.idea/gradle.xml
-.idea/libraries
+/ChatClient/.idea/gradle.xml
+/ChatClient/.idea/libraries
+
+/ChatServer/.idea/gradle.xml
+/ChatServer/.idea/libraries
