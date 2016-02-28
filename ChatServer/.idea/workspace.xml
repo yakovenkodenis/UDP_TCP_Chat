@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af3cfec4-835e-40fc-a6f1-7a2c0a2ae80d" name="Default" comment="Add multithreading.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/server/udp/DatagramManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/server/Responder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/server/Server.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/server/udp/UDPResponder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/server/udp/UDPServer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="DELETED" beforePath="D:\Univer\RIZ\ChatServer\src\UDPServer.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/util/inet/InetUtils.java" afterPath="$PROJECT_DIR$/src/util/inet/InetUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ChatClient/src/client/UDPClient.java" afterPath="$PROJECT_DIR$/../ChatClient/src/client/UDPClient.java" />
+    <list default="true" id="af3cfec4-835e-40fc-a6f1-7a2c0a2ae80d" name="Default" comment="Modify workspace&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ChatServer.iws" />
@@ -644,12 +634,19 @@
       <workItem from="1456054786984" duration="1510000" />
       <workItem from="1456058406360" duration="416000" />
       <workItem from="1456059287970" duration="714000" />
-      <workItem from="1456654903274" duration="3950000" />
+      <workItem from="1456654903274" duration="4084000" />
     </task>
+    <task id="LOCAL-00001" summary="Modify workspace&#10;">
+      <created>1456658898509</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1456658898509</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18792000" />
+    <option name="totallyTimeSpent" value="18926000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -672,7 +669,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="SvgViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3251634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3251634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -705,7 +702,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Add multithreading." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add multithreading." />
+    <MESSAGE value="Modify workspace&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify workspace&#10;" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
