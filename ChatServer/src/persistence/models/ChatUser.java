@@ -1,13 +1,15 @@
-package persistence;
+package persistence.models;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 
 @Entity
 @Table(name = "ChatUser")
-public class User implements Serializable {
+public class ChatUser implements Serializable {
 
     @Id
     @Column(name = "id")
@@ -38,10 +40,16 @@ public class User implements Serializable {
     @Column(name = "education_level")
     private String educationLevel;
 
-    public User() {}
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "chatUser")
+    private Set<ChatMessage> chatMessages = new HashSet<>();
 
-    public User(int id, String firstName, String lastName, String email, String password,
-                Date createdAt, Date updatedAt, boolean admin, String educationLevel) {
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "chatUser")
+    private Set<ChatGroupMembers> chatGroupMembers = new HashSet<>();
+
+    public ChatUser() {}
+
+    public ChatUser(int id, String firstName, String lastName, String email, String password,
+                    Date createdAt, Date updatedAt, boolean admin, String educationLevel) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -57,9 +65,9 @@ public class User implements Serializable {
         return id;
     }
 
-//    public void setId(int id) {
-//        this.id = id;
-//    }
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -123,5 +131,48 @@ public class User implements Serializable {
 
     public void setEducationLevel(String educationLevel) {
         this.educationLevel = educationLevel;
+    }
+
+    public Set<ChatMessage> getChatMessages() {
+        return chatMessages;
+    }
+
+    public void setChatMessages(Set<ChatMessage> chatMessages) {
+        this.chatMessages = chatMessages;
+    }
+
+    public Set<ChatGroupMembers> getChatGroupMembers() {
+        return chatGroupMembers;
+    }
+
+    public void setChatGroupMembers(Set<ChatGroupMembers> chatGroupMembers) {
+        this.chatGroupMembers = chatGroupMembers;
+    }
+
+    @Override
+    public String toString() {
+        return "ChatUser{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", createdAt=" + createdAt +
+                ", updatedAt=" + updatedAt +
+                ", admin=" + admin +
+                ", educationLevel='" + educationLevel + '\'' +
+                '}';
+    }
+
+    public static void updateAttributes(ChatUser oldUser, ChatUser newUser) {
+        oldUser.setFirstName(newUser.getFirstName());
+        oldUser.setLastName(newUser.getLastName());
+        oldUser.setEmail(newUser.getEmail());
+        oldUser.setPassword(newUser.getPassword());
+        oldUser.setCreatedAt(newUser.getCreatedAt());
+        oldUser.setUpdatedAt(new Date());
+        oldUser.setChatMessages(newUser.getChatMessages());
+        oldUser.setEducationLevel(newUser.getEducationLevel());
+        oldUser.setChatGroupMembers(newUser.getChatGroupMembers());
     }
 }
