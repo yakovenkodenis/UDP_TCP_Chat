@@ -51,7 +51,7 @@ public class ChatMessageManager implements IdQueriable {
     }
 
     @Override
-    public Object getById(Integer id) {
+    public ChatMessage getById(Integer id) {
         Session session = factory.openSession();
         ChatMessage message = null;
 
